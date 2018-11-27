@@ -7,7 +7,17 @@
 %define vendor_pretty Mi Pad 2
 %define device_pretty Xiaomi
 
+%define device_target_cpu i486
+
 %define installable_zip 1
+
+%define enable_kernel_update 1
+%define straggler_files \
+/fstab \
+/intel_prop.cfg \
+/rfkill_bt.sh
+%{nil}
+
 
 %include rpm/dhd/droid-hal-device.inc
 
