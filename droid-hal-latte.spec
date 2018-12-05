@@ -18,6 +18,7 @@
 /rfkill_bt.sh
 %{nil}
 
+%define makefstab_skip_entries /proc/sys/fs/binfmt_misc /sys/fs/cgroup/bfqio /sys/firmware/efi/efivars /sys/fs/cgroup/cpuset /sys/fs/pstore
 
 %include rpm/dhd/droid-hal-device.inc
 
